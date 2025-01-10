@@ -65,16 +65,16 @@ Step 5: Verify the Application
 Step 6: Optional Enhancements
 1. Push the Docker image to a Docker registry:
     - docker login
-      docker tag hello-world-app <your-dockerhub-username>/hello-world-app
-      docker push <your-dockerhub-username>/hello-world-app
+    - docker tag hello-world-app <your-dockerhub-username>/hello-world-app
+    - docker push <your-dockerhub-username>/hello-world-app
 2. Automate the EC2 setup using a shell script (setup-ec2.sh):
     - #!/bin/bash
-      sudo yum update -y
-      sudo amazon-linux-extras enable docker
-      sudo yum install docker -y
-      sudo service docker start
-      sudo systemctl enable docker
-      docker build -t hello-world-app /home/ec2-user/app
-      docker run -d -p 80:80 hello-world-app
+    - sudo yum update -y
+    - sudo amazon-linux-extras enable docker
+    - sudo yum install docker -y
+    - sudo service docker start
+    - sudo systemctl enable docker
+    - docker build -t hello-world-app /home/ec2-user/app
+    - docker run -d -p 80:80 hello-world-app
 
 
