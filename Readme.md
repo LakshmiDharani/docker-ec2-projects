@@ -78,16 +78,3 @@ Step 6: Optional Enhancements
       docker run -d -p 80:80 hello-world-app
 
 
-
-Deliverables
-
-GitHub Repository Structure:
-
-project-1-ec2-container-setup/
-├── README.md       # Explanation of the project
-├── Dockerfile      # Dockerfile for the app
-├── app/            # Source code directory
-│   └── app.js
-└── setup-ec2.sh    # Optional automation script
-
-
