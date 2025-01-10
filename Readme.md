@@ -29,13 +29,13 @@ Step 3: Install Docker on EC2
 1. Update the package manager: sudo yum update -y
 2. Install Docker:
     - sudo amazon-linux-extras enable docker
-      sudo yum install docker -y
+    - sudo yum install docker -y
 3. Start Docker and enable it to run on startup:
     - sudo service docker start
-      sudo systemctl enable docker
+    - sudo systemctl enable docker
 4. Add the ec2-user to the Docker group (optional):
-- sudo usermod -aG docker ec2-user
-- Log out and back in for the changes to take effect.
+    - sudo usermod -aG docker ec2-user
+    - Log out and back in for the changes to take effect.
 
 Step 4: Create and Containerize the Application
 1. Create a directory named app on your local system and add the following files:
